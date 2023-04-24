@@ -1,0 +1,52 @@
+.wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+    background-color: #cfcfcf;
+}
+
+.credSpace{
+    top: 50%;
+    left: 50%;
+    background-color: yellow;
+    height: 50vh;
+    Width: 100vh;
+    /* border: 1px solid black; */
+	border-radius: 4px;
+	box-shadow: 0 0 10px ;
+    display: grid;
+	grid-template-rows: 75% 25%;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 55vh;
+}
+
+.cl1{
+    /* background: red; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 25% 25% 15% 25% ;
+}
+
+
+.cl3{
+    display: grid;
+    grid-template-rows: 30%;
+    justify-content: center;
+}
+
+button{
+    border: 2px solid black;
+    background-color: #9bd630;
+    border-radius: 4px;
+    width: 10vh;
+    height: max-content;
+    font-size: 20px;
+    font-weight: 600;
+}

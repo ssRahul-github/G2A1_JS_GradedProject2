@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style-resume.css" />
+		<title>Resume</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<div class="upper">
+					<div class="btn-prev">
+						<button
+							id="prevBtn"
+							type="submit"
+							onclick="loadPreviousCandidate();"
+						>
+							Previos
+						</button>
+					</div>
+					<div class="searchBox">
+						<input
+							type="text"
+							onchange="filterByJobTitle(event);"
+							placeholder="search for keywords to filter the result"
+							name=""
+							id="searchBox"
+						/>
+					</div>
+					<div class="btn-next">
+						<button
+							id="nxtBtn"
+							type="submit"
+							onclick="loadNextCandidate();"
+						>
+							Next
+						</button>
+					</div>
+				</div>
+				<div class="error">
+					<div class="errorContent">
+						<img src="./errorImage.png" height="105" alt="someIMG" />
+						<span>No such results found</span>
+					</div>
+				</div>
+				<div class="main">
+					<div class="intro">
+						<div>
+							<!-- <div class="candidate-name">
+								<span id="candidateName">Name</span>
+							</div>
+							<div class="positionAppFor">
+								<span>Applied For : </span>
+								<span id="position">Position</span>
+							</div> -->
+						</div>
+						<div class="profile-picture">
+							<img src="./user.jpg" height="105" alt="someIMG" />
+						</div>
+					</div>
+					<div class="about">
+						<div class="aboutSide">
+							<div class="aboutSideInfo">
+								<h3>Personal Information</h3>
+								<p>number</p>
+							</div>
+							<div class="aboutSideInfo">
+								<h3>Techinal Skills</h3>
+								<p>number</p>
+							</div>
+							<div class="aboutSideInfo">
+								<h3>Hobbies</h3>
+								<p>number</p>
+							</div>
+						</div>
+						<div></div>
+						<div class="aboutMain">
+							<div class="section">
+								<h2>Work experience in previous company</h2>
+								<div class="info" id="workExp">
+									<label for="companyName"
+										>Company Name:
+									</label>
+									<span id="companyName">NAME</span>
+									<br />
+									<label for="prevPosition">Position: </label>
+									<span id="prevPosition">prevPosition</span>
+									<br />
+									<label for="stratDate">Strat Date: </label>
+									<span id="stratDate">sd</span>
+									<br />
+									<label for="endDate">End Date: </label>
+									<span id="endDate">endDate</span>
+									<br />
+									<label for="summary">Summary: </label>
+									<span id="summary">Sum</span>
+								</div>
+							</div>
+							<div class="section">
+								<h2>Projects</h2>
+								<div class="info" id="projects">
+									<span id="projectLabel"
+										>ProjectLabel:
+									</span>
+									<span id="projectSummary">summary</span>
+								</div>
+							</div>
+							<div class="section">
+								<h2>Education</h2>
+								<div class="info" id="education">
+									<ul>
+										<li>
+											<label for="ug">UG: </label>
+											<span id="ug">ug</span>
+										</li>
+										<li>
+											<label for="seniorSecondary"
+												>Senior Secondary :
+											</label>
+											<span id="seniorSecondary">SS</span>
+										</li>
+										<li>
+											<label for="highSchool"
+												>High School:
+											</label>
+											<span id="highSchool">HS</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="section">
+								<h2>Internship</h2>
+								<div class="info" id="internship">
+									<ul>
+										<li>
+											<label for="companyName"
+												>Company Name:
+											</label>
+											<span id="companyName">NAME</span>
+										</li>
+										<li>
+											<label for="prevPosition"
+												>Position:
+											</label>
+											<span id="prevPosition"
+												>prevPosition</span
+											>
+										</li>
+										<li>
+											<label for="startDate"
+												>Strat Date:
+											</label>
+											<span id="startDate">sd</span>
+										</li>
+										<li>
+											<label for="endDate"
+												>End Date:
+											</label>
+											<span id="endDate">endDate</span>
+										</li>
+										<li>
+											<label for="summary"
+												>Summary:
+											</label>
+											<span id="summary">Sum</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="section">
+								<h2>Achievements</h2>
+								<div class="info" id="achievement">
+									<ul>
+										<li><span>Ach1</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<scripts>
+			<script src="./resume.js"></script>
+		</scripts>
+	</body>
+</html>
